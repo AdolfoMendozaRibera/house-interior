@@ -1,0 +1,49 @@
+body
+{
+    background-color:rgb(159, 176, 207);
+}
+.center-container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el contenedor cubra al menos toda la altura de la ventana */
+}
+
+.image-container {
+    display: flex; /* Para colocar las imágenes en una misma línea */
+    overflow-x: auto; /* Habilita la barra de desplazamiento horizontal cuando las imágenes desborden el contenedor */
+    white-space: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+    max-width: 80%; /* Ajusta el ancho máximo para que el contenedor no desborde la ventana */
+    padding: 20px;
+}
+
+.class-images {
+    max-width: 100%; /* Establece un ancho máximo para las imágenes */
+    max-height: 500px; /* Establece una altura máxima para las imágenes */
+    object-fit: cover; /* Escala la imagen para llenar el contenedor manteniendo la relación de aspecto */
+    margin-right: 10px; /* Agrega un espacio entre las imágenes */
+    border: 3px solid #709a8c; /* Agrega un borde de 5px de ancho y color rojo */
+    
+}
+
+
+#id-upload {
+    margin-top: 30px;
+    font-size: 24px;
+    /* Otros estilos de diseño si es necesario */
+}
+
+/* Estilos para las imágenes */
+.class-images {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes */
+    height: auto; /* Mantiene la relación de aspecto de las imágenes */
+    transition: transform 0.2s, box-shadow 0.2s; /* Agrega una transición suave */
+}
+
+/* Estilos para las imágenes cuando se coloca el puntero del ratón encima */
+.class-images:hover {
+    transform: scale(1.05); /* Escala la imagen al 105% del tamaño original */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega un sombreado */
+}
+
